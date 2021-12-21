@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<style>
+body {
+    font-family:  serif, courier, serif;
+    margin: 0;
+    text-align: center;
+    background-color: black;
+  }
+  .allesalles{
+    margin-bottom: 50px;
+    background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANwAAADcCAMAAAAshD+zAAAAA1BMVEUAAACnej3aAAAARklEQVR4nO3BMQEAAADCoPVPbQsvoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/ga97AABJRXjUgAAAABJRU5ErkJggg==");
+  }
+  .alles{
+    text-align: right;
+    background-color: rgb(13, 152, 207);
+  }
+  .dropbtn {
+    color: black;
+    background-color: black;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    min-width: 90px;
+    background-color: rgb(13, 152, 207);
+
+  }
+  .dropbtn a {
+    color: black;}
+
+  .dropdown {
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:	#27408B;
+    min-width: 90px;
+  }
+
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+  }
+
+
+  .dropdown-content a:hover {background-color:#4876FF;}
+  .dropdown:hover .dropdown-content {display: block;}
+h1 {
+  animation: textwelle 3s;
+  color: white;
+  font-size:60px;
+}
+
+@keyframes textwelle {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  70% {
+    transform: scale(1.25);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+#main {
+  text-align: center;
+    max-width: 8500px;
+    margin: auto;
+    margin-top:15px;
+    padding: 16px;
+
+}
+#go{
+  background: black;
+  margin-top: 0px;
+  margin-bottom:0px;
+  border:0px solid black;
+}
+.formula-1 {}
+/* Karosserie der Autos */
+
+.formula-1 p {
+	background: #98A0D4;
+	border: 1px solid black;
+	border-radius: 50% / 100%;
+	border-bottom-left-radius: .5em;
+	border-bottom-right-radius: .5em;
+	font-size: 16px;
+	padding: 0.2em;
+	position: relative;
+	text-align: center;
+	width: 100px;
+}
+/* Autoreifen */
+
+.formula-1 p:after,
+.formula-1 p:before {
+	position: absolute;
+	color: lightgrey;
+	content: "●";
+	font-size: 2em;
+	width: 1em;
+	height: 1em;
+	top: 7px;
+}
+
+.formula-1 p {
+	animation: rennen 80s infinite 3s;
+}
+
+.formula-1 p:after {
+	right: 10px;
+}
+
+.formula-1 p:before {
+	left: 10px;
+}
+
+.formula-1 .linear {
+	background: #1D43B6;
+}
+
+.formula-1 .ease-in {
+	background:  #1E32B4;
+}
+
+
+
+.formula-1 .linear {
+	animation-timing-function: linear;
+}
+
+.formula-1 .ease-in {
+	animation-timing-function: ease-in;
+}
+
+
+
+@keyframes rennen {
+	0% {
+		transform: translate(0em);
+	}
+	100% {
+		transform: translate(75em);
+	}
+}
+#zwei {
+    text-align: center;
+    max-width: 950px;
+    margin: auto;
+    padding: 16px;
+    background-color: rgb(13, 152, 207);
+}
+#drei{ float:left;
+        margin-left: 50px;
+        margin-top: 10px;
+        color: white;
+}
+
+#footer {
+    margin-top: 20px;
+    text-align: center;
+    color: black;
+    padding: 16px;background-color: rgb(13, 152, 207);
+}
+.gallery {
+ margin: 0;
+ background: black;
+}
+.gallery figure {
+ position: inherit;
+ display: inline-block;
+ top: 0;
+ opacity: 1;
+ animation: wechseln 10s infinite;
+}
+
+@keyframes wechseln {
+ 0% {
+   opacity: 0;
+ }
+ 20% {
+   opacity: 1;
+ }
+ 40% {
+   opacity: 1;
+ }
+ 60% {
+   opacity: 0;
+ }
+ 100% {
+   opacity: 0;
+ }
+}
+
+.gallery figure:nth-of-type(2) {
+ animation-delay: 5s;
+ opacity: 1;
+ position: inherit;
+}
+
+.gallery figure:nth-of-type(3) {
+ animation-delay: 0s;
+ opacity: 1;
+ position: inherit;
+}
+.gallery figure:nth-of-type(4) {
+ animation-delay: 5s;
+ opacity: 1;
+ position: inherit;
+}
+</style>
+
+<html>
+    <head>
+        <title>BMW-BMW 5er</title>
+    </head>
+    <body>
+      <div class="alles">
+      <div class="dropdown">
+        <button class="dropbtn">Social Media</button>
+        <div class="dropdown-content">
+            <a href="https://www.instagram.com/bmw/">Instergramm</a>
+            <a href="https://www.facebook.com/BMW/">Facebook</a>
+        </div>
+      </div><div class="dropdown">
+        <button class="dropbtn">Info</button>
+        <div class="dropdown-content">
+            <a href="Standort.html">Standorte</a></a>
+        </div>
+      </div><div class="dropdown">
+        <button class="dropbtn">Fragen?</button>
+        <div class="dropdown-content">
+          <a href="Contact.html">hier</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn"><a href="index.html">Startseite</a></button></div>
+        </div>
+        <div id="main">
+              <h1>BMW 4er Limousine</h1>
+            </div>
+
+
+        <main id="go">
+        	<section class="formula-1">
+
+        	</section>
+        </main>
+        <figure class="gallery">
+        <figure> <img src="auto1.png" alt="auto"style="height:140px;width:250px;"></figure>
+        <figure> <img src="auto2.png" alt="auto"style="height:140px;width:250px;"></figure>
+        <figure> <img src="auto3.png" alt="auto"style="height:140px;width:250px;"></figure>
+        <figure> <img src="auto4.png" alt="auto"style="height:140px;width:250px;"></figure>
+        </figure>
+
+        <div id="zwei">
+
+        <div id="drei">Die BMW 5er Limousine ist der Inbegriff<br>
+           einer sportlichen Businesslimousine. <br>
+          Bereits auf den ersten Blick vermittelt sie<br>
+           stilsichere Sportlichkeit, die vor allem in der <br>
+          dynamischen Silhouette und reduzierten Formensprache <br>
+          zum Ausdruck kommt. Klare Flächen und <br>
+          präzise Konturen verleihen dem eleganten Exterieur <br>
+          eine moderne, technisch anmutende Optik. <br>
+          Das edle und funktionale Interieur komplettiert<br>
+           den innovativen Anspruch des Fahrzeugs mit<br>
+           zukunftsweisenden Technologien und sportlichen <br>
+           Ausstattungen. In Kombination mit beeindruckender<br>
+            Fahrdynamik und innovativen Technologien bietet <br>
+            die BMW 5er Limousine auf kurzen wie auf langen<br>
+            Strecken Komfort, Souveränität und vor allem <br>
+            Fahrfreude auf höchstem Niveau.
+      </div><img src="car4.jpg"alt="Logo" style="height:200px;border:6px double black;border-radius: 3px;margin-top:50px;margin-bottom:50px;margin-right:5px; background-color: black;"></div>
+
+      <figure class="gallery">
+      <figure> <img src="autou1.png" alt="auto"style="height:140px;width:250px;"></figure>
+      <figure> <img src="autou2.png" alt="auto"style="height:140px;width:250px;"></figure>
+      <figure> <img src="autou3.png" alt="auto"style="height:140px;width:250px;"></figure>
+      <figure> <img src="autou4.png" alt="auto"style="height:140px;width:250px;"></figure>
+      </figure>
+      <main id="go">
+        <section class="formula-1">
+          <p class="ease"><img src="logoweiß.png"alt="Logo" style="height: 20px;"></p>
+          <p class="linear"><img src="logoweiß.png"alt="Logo" style="height: 20px;"></p>
+
+        </section>
+      </main>
+
+        <div id="footer">
+        Matvey, Marvin, David, Linn, Bassel| Informatik
+        </div>
+    </body>
+</html>
